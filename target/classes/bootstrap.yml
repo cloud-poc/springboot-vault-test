@@ -1,0 +1,21 @@
+spring.application.name: vault-test
+spring.profiles:
+  active:
+  - dev
+
+spring.cloud:
+    vault:
+      host: demo.xxx.com
+      port: 443
+      scheme: https
+      authentication: TOKEN
+      config:
+          order: -10
+      kv:
+        application-name: vault-test
+        default-context: vault-test
+        backend: secret
+        enabled: true
+        profile-separator: /
+      token: s.7A1UuLB7aJdiGhn5Qaj2FlxN
+ 
