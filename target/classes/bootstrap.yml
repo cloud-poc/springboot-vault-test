@@ -10,7 +10,7 @@ spring.cloud:
       scheme: https
       authentication: TOKEN
       config:
-          order: -10
+          order: 0
       kv:
         application-name: vault-test
         default-context: vault-test
