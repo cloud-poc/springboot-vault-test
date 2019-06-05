@@ -1,4 +1,9 @@
 server.port: 8084
+server:  ssl:    enabled: true
+    key-alias: tls-certs
+    key-store: classpath:keystore.jks
+    key-password: changeit
+    
 
 logging.level.org.springframework.vault: DEBUG
 spring.profiles:
